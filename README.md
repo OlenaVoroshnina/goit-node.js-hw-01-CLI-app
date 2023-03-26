@@ -13,4 +13,4 @@
 [node index.js --action add --name Mango --email mango@gmail.com --phone 322-22-22](https://ibb.co/Hn3TMy0).
 
 ## Remove contact.
-[node index.js --action remove --id 3](https://ibb.co/jLDSB9p).
+[node index.js --action remove --id z8](https://ibb.co/jLDSB9p).

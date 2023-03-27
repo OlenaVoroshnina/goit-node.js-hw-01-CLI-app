@@ -32,7 +32,7 @@ async function addContact(name, email, phone) {
     const contacts = await listContacts();
     const newContact = { id: nanoid(2), name, email, phone };
     const contactsAll = [...contacts, newContact];
-    await fs.writeFile(contactsPath, JSON.stringify(contactsAll));
+    await fs.writeFile(contactsPath, JSON.stringify(contactsAll, null, 2), { encoding: 'utf-8' });
     return newContact;
   } catch (error) {
     console.log(`Error: ${error.message}`);
